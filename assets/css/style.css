@@ -2,6 +2,8 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-image: url(../images/psychic.jpg);
+  background-repeat: no-repeat;
 }
 
 h1 {
