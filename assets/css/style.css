@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    font-size: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+}
+
+p {
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+}
