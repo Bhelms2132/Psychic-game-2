@@ -2,8 +2,7 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
-  background-image: url(../images/psychic.jpg);
-  background-repeat: no-repeat;
+  background: url(../images/psychic.jpg) no-repeat;
 }
 
 h1 {
@@ -13,6 +12,7 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
     top: 20%;
+    
 }
 
 p {
@@ -32,3 +32,4 @@ p {
     top: 55%;
     font-size: 20px;
 }
+
