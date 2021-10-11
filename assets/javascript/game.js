@@ -2,7 +2,6 @@
 var computerLetters = ["k", "a", "s", "o", "n"];
 
 // Creating variables to hold the number of wins, losses, guesses left and guesses so far.
-var computerChoice = 0;
 var wins = 0;
 var losses = 0;
 var guessesLeft = 0;
@@ -14,7 +13,7 @@ var userWins = document.getElementById('wins');
 var userLosses = document.getElementById('losses');
 var userGuessesLeft = document.getElementById('guesses-left');
 var yourGuesses = document.getElementById('your-guesses');
-var computerChooseLetter = document.getElementById('computer-choice');
+
 
 /* for loop for Computer Guessed Letters 
 for (var i = 0; i < computerLetters.length; i++) {
@@ -48,6 +47,9 @@ document.onkeyup = function(event) {
     // Display the user and computer guesses, and wins, losses, guesses left and guesses so far.
         userWins.textContent = wins;
         userLosses.textContent = losses;
+        userGuessesLeft.textContent = guessesLeft;
+        yourGuesses.textContent = userGuess;
+
     }
   
 }
