@@ -2,7 +2,7 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
-  background: url(../images/psychic.jpg) no-repeat;
+  background: url(../images/) no-repeat;
 }
 
 h1 {
@@ -15,14 +15,23 @@ h1 {
     
 }
 
-p {
+h2 {
+    position: absolute;
+    text-align: center;
+    font-size: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35%;
+}
+
+/*p {
     position: absolute;
     text-align: center;
     font-size: 30px;
     left: 50%;
     transform: translateX(-50%);
     top: 40%;
-}
+}*/
 
 .results {
     position: absolute;
