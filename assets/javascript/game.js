@@ -1,7 +1,8 @@
 // Computer Letters Array
-var computerLetters = ["k", "a", "s", "o", "n", "w", "p", "y", "z", "f"];
+var computerLetters = ["k", "a", "s", "o", "n"];
 
 // Creating variables to hold the number of wins, losses, guesses left and guesses so far.
+var computerChoice = 0;
 var wins = 0;
 var losses = 0;
 var guessesLeft = 0;
@@ -34,6 +35,19 @@ document.onkeyup = function(event) {
 
     // Randomly chooses a choice from the options array. This is the Computer's guess.
     var computerChoose = computerLetters[Math.floor(Math.random() * computerLetters.length)];
+     console.log(computerChoose);
 
+    // This logic determines the outcome of the game (win/loss/), and increments the appropriate number
+    if((userGuess == 'k') || (userGuess == 'a') || (userGuess == 's') || (userGuess == 'o') || (userGuess == 'n')) {
+        if (userGuess === computerChoose) {
+            wins++;
+         } else {
+            losses++;
+        }
 
+    // Display the user and computer guesses, and wins, losses, guesses left and guesses so far.
+        userWins.textContent = wins;
+        userLosses.textContent = losses;
+    }
+  
 }
