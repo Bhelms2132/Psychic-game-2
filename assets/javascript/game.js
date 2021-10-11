@@ -1,10 +1,17 @@
 // Computer Letters Array
-var computerLetters = ["K", "A", "R", "O", "N", "W", "P", "Y"];
+var computerLetters = ["k", "a", "s", "o", "n", "w", "p", "y", "z", "f"];
+
+// Creating variables to hold the number of wins, losses, guesses left and guesses so far.
+var wins = 0;
+var losses = 0;
+var guessesLeft = 0;
+var guessesSoFar = 0;
+
 
 // Variables that hold references to the places in the HTML where we want to display things.
 var userWins = document.getElementById('wins');
 var userLosses = document.getElementById('losses');
-var guessesLeft = document.getElementById('guesses-left');
+var userGuessesLeft = document.getElementById('guesses-left');
 var yourGuesses = document.getElementById('your-guesses');
 var computerChooseLetter = document.getElementById('computer-choice');
 
@@ -24,7 +31,9 @@ document.onkeyup = function(event) {
     
     // Determines which key was pressed.
     var userGuess = event.key;
-    console.log(userGuess);
 
-    
+    // Randomly chooses a choice from the options array. This is the Computer's guess.
+    var computerChoose = computerLetters[Math.floor(Math.random() * computerLetters.length)];
+
+
 }
