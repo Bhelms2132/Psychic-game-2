@@ -22,4 +22,9 @@ for (var i = 0; i < computerLetters.length; i++) {
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event) {
     
+    // Determines which key was pressed.
+    var userGuess = event.key;
+    console.log(userGuess);
+
+    
 }
