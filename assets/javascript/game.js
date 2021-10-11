@@ -13,5 +13,7 @@ document.getElementById("yourGuesses").innerHTML = compLetters;*/
 
 // for loop for Computer Guessed Letters 
 for (var i = 0; i < compLetters.length; i++) {
-    console.log(compLetters[i]);
+    var currentLetter = compLetters[i];
+
+    console.log(currentLetter);
 }
