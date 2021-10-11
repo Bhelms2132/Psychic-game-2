@@ -1,5 +1,5 @@
 // Computer Letters Array
-var computerChoice = [1, 2, 3, 4, 5];
+var computerChoice = ['k', 'a', 's', 'o', 'n'];
      
 
 
@@ -22,7 +22,9 @@ document.onkeyup = function(event) {
     
     // Determines which key was pressed.
     var userGuess = event.key;
+    console.log(userGuess);
     guessesLeft --;
+    guessesSoFar.push(userGuess);
 
     // Randomly chooses a choice from the options array. This is the Computer's guess.
     var computerChoose = computerChoice[Math.floor(Math.random() * computerChoice.length)];
