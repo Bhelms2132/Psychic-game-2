@@ -1,5 +1,5 @@
 // Computer Letters Array
-var computerChoice = ['k', 'a', 's', 'o', 'n'];
+var computerChoice = ['a', 's', 'd', 'f', 'g', 'c', 'z', 'o','p', 'm', 'e'];
      
 
 
@@ -11,6 +11,7 @@ var guessesSoFar = [];
 
 
 // Variables that hold references to the places in the HTML where we want to display things.
+ 
 var userWins = document.getElementById('wins');
 var userLosses = document.getElementById('losses');
 var userGuessesLeft = document.getElementById('guesses-left');
@@ -22,7 +23,6 @@ document.onkeyup = function(event) {
     
     // Determines which key was pressed.
     var userGuess = event.key;
-    console.log(userGuess);
     guessesLeft --;
     guessesSoFar.push(userGuess);
 
@@ -30,9 +30,11 @@ document.onkeyup = function(event) {
     var computerChoose = computerChoice[Math.floor(Math.random() * computerChoice.length)];
      console.log(computerChoose);
 
-    // This logic determines the outcome of the game (win/loss/), and increments the appropriate number
+    
+        
 
-        if (userGuess === computerChoose) {
+           // This logic determines the outcome of the game (win/loss/), and increments the appropriate number
+             if (userGuess === computerChoose) {
             wins++;
             userWins.textContent = wins;
             computerChoose = computerChoice[Math.floor(Math.random() * computerChoice.length)];
@@ -50,8 +52,10 @@ document.onkeyup = function(event) {
         
         
         userGuessesLeft.textContent = guessesLeft;
-        yourGuesses.textContent = userGuess;
+        yourGuesses.textContent = guessesSoFar;
 
+    
+       
     
   
 }
